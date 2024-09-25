@@ -11,6 +11,10 @@
       "src": "/petitions",
       "methods": ["GET", "POST"],
       "dest": "app.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "app.py" 
     }
   ]
 }
