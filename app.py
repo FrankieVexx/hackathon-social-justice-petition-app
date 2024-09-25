@@ -20,6 +20,9 @@ def get_db_connection():
         print(f"Error: {err}")
         return None
 
+@app.route('/')
+def home():
+    return "Welcome to the Petition App!"
 @app.route('/petitions', methods=['GET'])
 def get_petitions():
     db = get_db_connection()
