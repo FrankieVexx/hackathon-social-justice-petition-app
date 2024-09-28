@@ -7,6 +7,8 @@ load_dotenv()
 
 app = Flask(__name__)
 
+#DB connection
+
 def get_db_connection():
     try:
         connection = mysql.connector.connect(
